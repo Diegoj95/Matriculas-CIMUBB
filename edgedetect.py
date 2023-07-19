@@ -36,7 +36,7 @@ class EdgeDetect(Preview):
         self.make_thread_safe(pixels, image_size)
 
     def detect_plates(self, gray):
-        plates = self.plate_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+        plates = self.plate_cascade.detectMultiScale(gray, scaleFactor=1.1)
         return plates
 
     def annotate_plates(self, image, plates):

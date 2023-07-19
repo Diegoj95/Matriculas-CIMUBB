@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.uix.screenmanager import Screen
 from gestures4kivy import CommonGestures
 
-### A swipe sensitive Screen, parent of all screen layouts
+### Para deslizar desde home a la cámara
 class SwipeScreen(Screen, CommonGestures):
 
     def cgb_horizontal_page(self, touch, right):
